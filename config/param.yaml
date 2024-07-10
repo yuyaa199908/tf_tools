@@ -1,0 +1,6 @@
+/**:
+  ros__parameters:
+    UDP_IP: "0.0.0.0"
+    UDP_PORT: 50000
+    frame_id: "map"
+    publish_interval: 0.01
