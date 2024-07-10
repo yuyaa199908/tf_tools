@@ -18,7 +18,7 @@ class ZigsimGate(Node):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.sock.bind((self.UDP_IP, self.UDP_PORT))
 
-        self.pub_pose = self.create_publisher(PoseStamped, 'iphone_pose', 10)
+        self.pub_pose = self.create_publisher(PoseStamped, '/output_pose', 10)
         self.timer = self.create_timer(self.publish_interval, self.CB_timer)
 
     def CB_timer(self):
