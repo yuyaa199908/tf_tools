@@ -24,6 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'zigsim_gate = '+ package_name + '.zigsim_gate:main',
+            'zigsim_gate_tf = '+ package_name + '.zigsim_gate_tf:main',
         ],
     },
 )
